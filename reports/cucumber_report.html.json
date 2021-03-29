@@ -1,0 +1,210 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate the login page",
+    "line": 1,
+    "id": "validate-the-login-page",
+    "tags": [],
+    "uri": "entryCentralLogin.feature",
+    "elements": [
+      {
+        "id": "validate-the-login-page;when-i-navigate-to-the-login-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "When I navigate to the login page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am at Kayak page",
+            "result": {
+              "status": "failed",
+              "duration": 60332000000,
+              "error_message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:158187:13)\n    at https://www.kayak.com.co/__cypress/runner/cypress_runner.js:159171:16\n    at tryCatcher (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:10765:23)\n    at https://www.kayak.com.co/__cypress/runner/cypress_runner.js:5887:41\n    at tryCatcher (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:8878:18)\n    at _drainQueueStep (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (https://www.kayak.com.co/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at LoginPage.navigate (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:89:10)\n    at Context.eval (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:48:13)\n    at Context.resolveAndRunStepDefinition (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:10693:9)\n    at Context.eval (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:10036:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see \"EntryCentral.com\" displayed as the page title",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-the-login-page;when-i-log-in-with-an-incorrect-email/password-combination",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "When I log in with an incorrect email/password combination",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am at Kayak page",
+            "result": {
+              "status": "passed",
+              "duration": 1828000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I login with an \"invalid\" credential combination",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#username`, but never found it.\n    at LoginPage.fillLoginCredentials (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:153:22)\n    at Context.eval (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:51:13)\n    at Context.resolveAndRunStepDefinition (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:10693:9)\n    at Context.eval (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:10036:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the \"Invalid credentials\" login error message",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-the-login-page;when-i-log-in-with-a-valid-registered-email/password-combination",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "When I log in with a valid registered email/password combination",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am at Kayak page",
+            "result": {
+              "status": "passed",
+              "duration": 1659000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I login with a \"valid\" credential combination",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#username`, but never found it.\n    at LoginPage.fillLoginCredentials (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:153:22)\n    at Context.eval (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:51:13)\n    at Context.resolveAndRunStepDefinition (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:10693:9)\n    at Context.eval (https://www.kayak.com.co/__cypress/tests?p=cypress/integration/entryCentralLogin.feature:10036:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see \"Account - EntryCentral.com\" displayed as the page title",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
+    "name": "Validate Search",
+    "line": 1,
+    "id": "validate-search",
+    "tags": [],
+    "uri": "kayakSearch.feature",
+    "elements": [
+      {
+        "id": "validate-search;update-dates-to-search-for-a-trip",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Update dates to Search for a trip",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am at Kayak page",
+            "result": {
+              "status": "passed",
+              "duration": 25162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search a trip from 'Medellin' to 'San Francisco'",
+            "result": {
+              "status": "passed",
+              "duration": 3167000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I select the date range for a trip 'abril 10', 'abril 20'",
+            "result": {
+              "status": "passed",
+              "duration": 1979000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I choose the number of travelers 2 adults and 1 child",
+            "result": {
+              "status": "passed",
+              "duration": 25271000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I Update the date range for a trip 'marzo 29', 'abril 13'",
+            "result": {
+              "status": "passed",
+              "duration": 2399000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I select the lowest price",
+            "result": {
+              "status": "failed",
+              "duration": 5025000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `spam`, but never found it.\n    at SearchPage.selectLowerPrice (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:361:22)\n    at _callee6$ (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:150:22)\n    at tryCatch (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:658:40)\n    at Generator.invoke [as _invoke] (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:884:22)\n    at Generator.prototype.<computed> [as next] (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:710:21)\n    at asyncGeneratorStep (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:400:24)\n    at _next (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:422:9)\n    at eval (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:429:7)\nat new Promise (<anonymous>)\n    at Context.eval (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:418:12)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see \"Reserva: MDE a SFO, 10/4 — 20/4\" displayed as the page title",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate Search",
+    "line": 1,
+    "id": "validate-search",
+    "tags": [],
+    "uri": "kayakSearch.feature",
+    "elements": [
+      {
+        "id": "validate-search;update-dates-to-search-for-a-trip",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Update dates to Search for a trip",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am at Kayak page",
+            "result": {
+              "status": "passed",
+              "duration": 2456000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I search a trip from 'Medellin' to 'San Francisco'",
+            "result": {
+              "status": "passed",
+              "duration": 2747000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I select the date range for a trip 'abril 10', 'abril 20'",
+            "result": {
+              "status": "passed",
+              "duration": 1183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I choose the number of travelers 2 adults and 1 child",
+            "result": {
+              "status": "passed",
+              "duration": 11424000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I Update the date range for a trip 'marzo 29', 'abril 13'",
+            "result": {
+              "status": "passed",
+              "duration": 726000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I select the lowest price",
+            "result": {
+              "status": "failed",
+              "duration": 4655000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `spam`, but never found it.\n    at SearchPage.selectLowerPrice (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:361:22)\n    at _callee6$ (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:150:22)\n    at tryCatch (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:658:40)\n    at Generator.invoke [as _invoke] (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:884:22)\n    at Generator.prototype.<computed> [as next] (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:710:21)\n    at asyncGeneratorStep (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:400:24)\n    at _next (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:422:9)\n    at eval (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:429:7)\nat new Promise (<anonymous>)\n    at Context.eval (https://www.kayak.com.co/__cypress/tests?p=cypress\\integration\\kayakSearch.feature:418:12)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see \"Reserva: MDE a SFO, 10/4 — 20/4\" displayed as the page title",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
