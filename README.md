@@ -26,5 +26,6 @@ video provide by cypress into
 
 # Unit test for revertString first point.
 script
-- npm run unitTest
+- ` $npm run unitTest`
+
 files, solverRevert.js and solveRevert.test.js
