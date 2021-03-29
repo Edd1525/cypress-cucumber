@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "test": "cypress run --browser chrome",
+    "test": "cypress run --browser chrome --no-exit",
     "test:headless": "cypress run --headless",
-    "generate:report" : "node ./support/cucumber-html-reporter.js"
+    "generate:report": "node ./cucumber-html-report.js"
   },
   "keywords": [
     "Cypress",

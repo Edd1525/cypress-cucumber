@@ -30,6 +30,7 @@ Then('I select the lowest price', async () => {
     searchPage.selectLowerPrice();
 });
 
-Then('I should see the {string} login error message', async (message) => {
-    searchPage.getAlertMessage().should('contain.text', message)
+Then('I should see {string} displayed as the page title with the lowest prices', async (message) => {
+    searchPage.getMessage(message)
+    searchPage.validateRedirect();
 });

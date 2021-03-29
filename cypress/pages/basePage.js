@@ -5,7 +5,7 @@ export default class BasePage {
 
     baseUrl       = "https://www.kayak.com.co/";
     cookieMessage = "#ccc-close";
-    
+
     navigate() {
         cy
             .visit(this.baseUrl)
