@@ -24,7 +24,7 @@ video provide by cypress into
 
 ![Alt text](reportHtmlKayak.png?raw=true "Title")
 
-** Unit test for revertString 
+# Unit test for revertString first point.
 script
 - npm run unitTest
 files, solverRevert.js and solveRevert.test.js
